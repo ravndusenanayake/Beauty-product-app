@@ -5,9 +5,12 @@ import ProductRouter from "./routes/productRoute.js";
 import userRouter from "./routes/userRoute.js";
 import jwt from "jsonwebtoken";
 
+import cors from "cors";
+
 const app = express();
 
 app.use(bodyParser.json());
+app.use(cors());
 
 
 //bearer histhanak tibila tmi token ek tyne eeka clear naane eeka nisaa bearer kyn kotasa ain kr gnda oone
